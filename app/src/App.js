@@ -4,6 +4,7 @@ import './App.css';
 import Button from './components/Button'
 import TextField from './components/TextField'
 import List from './components/List'
+import Nav from './components/Nav'
 
 
 class App extends Component {
@@ -31,12 +32,13 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">100-Day Coding Challenge</h1>
+          <List items={this.state.rules}/>
           <Button text={'Click Me'} handleClick={this.alert}/>
           <TextField value={this.state.text} handleChange={this.textFieldHandler}/>
           {this.state.text}
         </header>
         <p className="App-intro">
-          <List items={this.state.rules}/>
+          <Nav />
         </p>
       </div>
     );
