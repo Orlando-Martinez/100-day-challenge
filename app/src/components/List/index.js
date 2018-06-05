@@ -1,11 +1,13 @@
 import React from 'react';
+import './styles.scss';
 
-const List = ({items}) => (
-    <ul>
+const List = ({items, inline}) => {
+    const isInline = () => ( inline ? 'inline': '' )
+    return(<ul className={isInline()}>
         {items.map(item => (
             <li>{item}</li>
         ))}
-    </ul>
-)
+    </ul>)
+}
 
 export default List;

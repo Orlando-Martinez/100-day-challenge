@@ -1,0 +1,11 @@
+@import '../../sass/variables/colors';
+
+.Home  {
+    font-size: 14px;
+    background-color: $grey;
+    color: $white;
+    height: 50px;
+    .title {
+        font-size: 18px;
+    }
+}
