@@ -14,9 +14,7 @@ class Countdown extends Component {
 
     render() {
         return (
-            <div>
-                {this.daysLeft()}
-            </div>
+            <span>({this.daysLeft()})</span>
         )    
     }
 }

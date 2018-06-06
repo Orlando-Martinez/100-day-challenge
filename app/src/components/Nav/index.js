@@ -13,12 +13,15 @@ const routes = [
 
 const Nav = () => (
     <Router>
-      <div>
-          <List items={routes} inline/>
-        <hr />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </div>
+        <div>
+            <nav className='nav'>
+                <List items={routes} inline/>
+            </nav>
+            <div>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+            </div>
+        </div>
     </Router>
 );
 
