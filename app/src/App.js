@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './components/Button'
-import TextField from './components/TextField'
-import List from './components/List'
-import Nav from './components/Nav'
-import Countdown from './components/Countdown'
+import List from './components/List';
+import Nav from './components/Nav';
+import Countdown from './components/Countdown';
 
 class App extends Component {
   constructor(props){
@@ -12,7 +10,7 @@ class App extends Component {
     this.state = {
       text: '',
       rules: ['Rule 1', 'Rule 2', 'Rule 3']
-    }
+    };
   }
 
   textFieldHandler = (event) => {
