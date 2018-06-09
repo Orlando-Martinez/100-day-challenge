@@ -3,13 +3,19 @@ import './App.css';
 import List from './components/List';
 import Nav from './components/Nav';
 import Countdown from './components/Countdown';
+import SelectField from './components/SelectField';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       text: '',
-      rules: ['Rule 1', 'Rule 2', 'Rule 3']
+      rules: ['Rule 1', 'Rule 2', 'Rule 3'],
+      options: [
+        {text: 'option1', value: 'option1'},
+        {text: 'option2', value: 'option2'},
+        {text: 'option3', value: 'option3'}
+      ]
     };
   }
 
@@ -33,6 +39,12 @@ class App extends Component {
     return today;
   }
 
+  handleChange = (event) => {
+    this.setState({
+      selection: event.target.value
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -43,6 +55,8 @@ class App extends Component {
         </header>
         <p className="App-intro">
           <Nav />
+          <SelectField options={this.state.options} onChange={this.handleChange} />
+          {this.state.selection}
         </p>
       </div>
     );
