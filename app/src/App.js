@@ -54,9 +54,9 @@ class App extends Component {
           <List items={this.state.rules}/>
         </header>
         <p className="App-intro">
-          <Nav />
           <SelectField options={this.state.options} onChange={this.handleChange} />
           {this.state.selection}
+          <Nav />        
         </p>
       </div>
     );
