@@ -4,7 +4,7 @@ const SelectField = ({ options, onChange }) => {
     return (
         <select onChange={onChange}>
             {options.map((item, index) => (
-               <option>{item.text}</option> 
+               <option key={index}>{item.text}</option> 
             ))}
         </select>
     )

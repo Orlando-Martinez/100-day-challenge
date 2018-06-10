@@ -6,4 +6,4 @@ export const WakaTime = ({url}) => (
     </figure>
 )
 
-export default WakaTime
+export default WakaTime;
