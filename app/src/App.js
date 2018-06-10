@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
 import List from './components/List';
 import Nav from './components/Nav';
 import Countdown from './components/Countdown';
 import SelectField from './components/SelectField';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 
 class App extends Component {
   constructor(props){
@@ -12,9 +16,8 @@ class App extends Component {
       text: '',
       rules: ['Rule 1', 'Rule 2', 'Rule 3'],
       options: [
-        {text: 'option1', value: 'option1'},
-        {text: 'option2', value: 'option2'},
-        {text: 'option3', value: 'option3'}
+        {text: 'Languages', value: 'languages'},
+        {text: 'Activity', value: 'activity'},
       ]
     };
   }
@@ -53,11 +56,17 @@ class App extends Component {
           <Countdown start={this.today()} end={'09-09-2018'} />
           <List items={this.state.rules}/>
         </header>
-        <p className="App-intro">
+        <div className="App-intro">
           <SelectField options={this.state.options} onChange={this.handleChange} />
           {this.state.selection}
-          <Nav />        
-        </p>
+          <Router>
+            <div>
+              <Nav />
+              <Route exact path="/" render={() => <Home />} />
+              <Route path="/about" render={() => <About />} />
+            </div>
+          </Router>
+        </div>
       </div>
     );
   }

@@ -5,8 +5,8 @@ const List = ({items, inline}) => {
     const isInline = () => ( inline ? 'inline': 'list' )
     return (
         <ul className={isInline()}>
-            {items.map(item => (
-                <li>{item}</li>
+            {items.map((item, index) => (
+                <li key={index}>{item}</li>
             ))}
         </ul>
     )
