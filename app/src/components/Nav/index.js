@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import List from '../List';
+
 
 import './styles.scss';
 
@@ -12,7 +14,11 @@ const routes = [
 
 const Nav = () => (
     <nav className='nav'>
-        <List items={routes} inline/>
+        <Row className='myRow'>
+          <Col xs={12} lgOffset={9} lg={3}>
+              <List items={routes} inline/>
+          </Col>
+        </Row>
     </nav>
 );
 
