@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Grid, } from 'react-flexbox-grid';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import List from './components/List';
 import Nav from './components/Nav';
 import Countdown from './components/Countdown';
 import SelectField from './components/SelectField';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
+import './App.css';
 
 class App extends Component {
   constructor(props){

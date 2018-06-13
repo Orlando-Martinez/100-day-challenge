@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.scss'
 
 import searchIcon from '../../images/search.svg'
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 
 const Home = () => (
     <div className='Home'>Home
