@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Grid, } from 'react-flexbox-grid';
-
+import PropTypes from 'prop-types';
 import Home from './pages/Home';
 import About from './pages/About';
 import List from './components/List';
@@ -74,6 +74,10 @@ class App extends Component {
       </div>
     );
   }
+}
+
+App.propTypes = {
+  
 }
 
 export default App;
