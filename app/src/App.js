@@ -10,8 +10,7 @@ import List from './components/List';
 import Nav from './components/Nav';
 import Countdown from './components/Countdown';
 import SelectField from './components/SelectField';
-
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor(props){

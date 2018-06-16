@@ -7,13 +7,16 @@ import './styles.scss';
 const Nav = () => (
     <nav className='nav'>
         <Row>
-          <Col xs={12} lgOffset={9} lg={3}>
-            <ul className='routes'>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/challenge">Challenge</Link></li>
-            </ul>
-          </Col>
+            <Col lg={4}>
+                <h1 className='name'>Orlando Martinez</h1>
+            </Col>
+            <Col lg={8}>
+                <ul className='routes'>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/challenge">Challenge</Link></li>
+                </ul>
+            </Col>
         </Row>
     </nav>
 );
