@@ -54,23 +54,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Router>
-        <Grid>
-          <header className="App-header">
-            <Nav />
-
-          </header>
-          <div className="App-intro">
-            <SelectField options={this.state.options} onChange={this.handleChange} />
-            {this.state.selection}
-              <div>
-                <Route exact path="/" render={() => <Home />} />
-                <Route path="/about" render={() => <About />} />
-                <Route path="/challenge" render={() => <Challenge />} />
-              </div>
-          </div>
-        </Grid>
-
+        <Router>
+          <Grid>
+            <header className="App-header">
+              <Nav />
+            </header>
+            <div className="App-intro">
+              <SelectField options={this.state.options} onChange={this.handleChange} />
+              {this.state.selection}
+                <div>
+                  <Route exact path="/" render={() => <Home />} />
+                  <Route path="/about" render={() => <About />} />
+                  <Route path="/challenge" render={() => <Challenge />} />
+                </div>
+            </div>
+          </Grid>
         </Router>
       </div>
     );
