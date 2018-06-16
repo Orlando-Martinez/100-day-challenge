@@ -4,6 +4,8 @@ import { Grid, } from 'react-flexbox-grid';
 import PropTypes from 'prop-types';
 import Home from './pages/Home';
 import About from './pages/About';
+import Challenge from './pages/Challenge';
+
 import List from './components/List';
 import Nav from './components/Nav';
 import Countdown from './components/Countdown';
@@ -16,7 +18,6 @@ class App extends Component {
     super(props);
     this.state = {
       text: '',
-      rules: ['Rule 1', 'Rule 2', 'Rule 3'],
       options: [
         {text: 'Languages', value: 'languages'},
         {text: 'Activity', value: 'activity'},
@@ -53,24 +54,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Router>
         <Grid>
           <header className="App-header">
-            <h1 className="App-title">100-Day Coding Challenge</h1>
-            <Countdown start={this.today()} end={'09-09-2018'} />
-            <List items={this.state.rules}/>
+            <Nav />
+
           </header>
           <div className="App-intro">
             <SelectField options={this.state.options} onChange={this.handleChange} />
             {this.state.selection}
-            <Router>
               <div>
-                <Nav />
                 <Route exact path="/" render={() => <Home />} />
                 <Route path="/about" render={() => <About />} />
+                <Route path="/challenge" render={() => <Challenge />} />
               </div>
-            </Router>
           </div>
         </Grid>
+
+        </Router>
       </div>
     );
   }
