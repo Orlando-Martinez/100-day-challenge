@@ -6,7 +6,7 @@ import { Row, Col } from 'react-flexbox-grid';
 
 const Home = () => (
     <div className='Home'>Home
-        <img src={searchIcon} className='search' />
+        <img src={searchIcon} className='search' alt="search"/>
         <Row className='myRow'>
           <Col xs={12} md={4}>
             Col 1

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 
 import './styles.scss';
 

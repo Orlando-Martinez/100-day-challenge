@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Grid, } from 'react-flexbox-grid';
-import PropTypes from 'prop-types';
 import Home from './pages/Home';
 import About from './pages/About';
 import Challenge from './pages/Challenge';
 
-import List from './components/List';
 import Nav from './components/Nav';
-import Countdown from './components/Countdown';
 import SelectField from './components/SelectField';
 import './App.scss';
 
