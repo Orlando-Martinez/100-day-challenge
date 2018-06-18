@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./GreatVibes/GreatVibes-Regular.ttf') format('truetype');
+}
