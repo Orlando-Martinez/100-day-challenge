@@ -6,7 +6,6 @@ import About from './pages/About';
 import Challenge from './pages/Challenge';
 
 import Nav from './components/Nav';
-import SelectField from './components/SelectField';
 import './App.scss';
 
 class App extends Component {
@@ -14,37 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       text: '',
-      options: [
-        {text: 'Languages', value: 'languages'},
-        {text: 'Activity', value: 'activity'},
-      ]
     };
-  }
-
-  textFieldHandler = (event) => {
-    this.setState({
-      text: event.target.value,
-    })
-  }
-
-  alert = () => {
-    alert('Click handler worked!')
-  }
-
-  today = () => {
-    var date = new Date();
-    var month = date.getUTCMonth() + 1;
-    var day = date.getUTCDate();
-    var year = date.getUTCFullYear();
-
-    var today = year + "/" + month + "/" + day;
-    return today;
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      selection: event.target.value
-    })
   }
 
   render() {
@@ -56,7 +25,6 @@ class App extends Component {
               <Nav />
             </header>
             <div className="App-intro">
-              <SelectField options={this.state.options} onChange={this.handleChange} />
               {this.state.selection}
                 <div>
                   <Route exact path="/" render={() => <Home />} />
