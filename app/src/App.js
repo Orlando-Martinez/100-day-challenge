@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Grid, } from 'react-flexbox-grid';
 import Home from './pages/Home';
 import About from './pages/About';
 import Challenge from './pages/Challenge';
@@ -20,19 +19,16 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Grid>
+          <div>
             <header className="App-header">
               <Nav />
             </header>
             <div className="App-intro">
-              {this.state.selection}
-                <div>
-                  <Route exact path="/" render={() => <Home />} />
-                  <Route path="/about" render={() => <About />} />
-                  <Route path="/challenge" render={() => <Challenge />} />
-                </div>
+                <Route exact path="/" render={() => <Home />} />
+                <Route path="/about" render={() => <About />} />
+                <Route path="/challenge" render={() => <Challenge />} />
             </div>
-          </Grid>
+          </div>
         </Router>
       </div>
     );
