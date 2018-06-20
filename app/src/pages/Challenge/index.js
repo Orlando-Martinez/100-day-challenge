@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-flexbox-grid';
 
 import Countdown from '../../components/Countdown';
 import List from '../../components/List';
@@ -43,14 +42,8 @@ export class Challenge extends Component {
             <Countdown start={this.today()} end={'09-09-2018'} />
             <List items={this.state.rules}/>
             <SelectField options={this.state.options} onChange={this.handleChange} />
-            <Row>
-                <Col lg={6}>
-                    <WakaTime url={languages} />
-                </Col>
-                <Col lg={6}>
-                    <WakaTime url={activity} />
-                </Col>
-            </Row>
+            <WakaTime url={languages} />
+            <WakaTime url={activity} />
         </div>
     )
 }

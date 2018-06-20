@@ -1,11 +1,11 @@
-@import 'sass/fonts/index.css';
+@import 'sass/variables/colors.scss';
 
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: $smaltBlue;
   height: 100px;
   padding: 20px;
   color: white;
@@ -18,5 +18,5 @@
 }
 
 .App-intro {
-  font-size: large;
+
 }
