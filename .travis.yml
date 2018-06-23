@@ -3,7 +3,7 @@ node_js:
 - "node"
 script:
 - npm test
-- npm run build
+- CI=false npm run build
 env:
 - MY_VAR=EverythingIsAwesomen
 - NODE_ENV=TEST
