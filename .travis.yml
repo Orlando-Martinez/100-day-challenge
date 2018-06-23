@@ -1,9 +1,9 @@
 language: node_js
 node_js:
- - "stable"
- script:
-  - npm test
-  - npm run build
- env:
+- "node"
+script:
+- npm test
+- CI=false npm run build
+env:
 - MY_VAR=EverythingIsAwesomen
 - NODE_ENV=TEST
