@@ -1,0 +1,24 @@
+@import '../../sass/variables/colors';
+
+.nav {
+    a {
+        color: #333;
+        text-decoration: none; 
+    }
+
+    .routes {
+        list-style-type: none;
+    }
+    
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.name {
+    font-family: 'Roboto';
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    color: $smaltBlue;
+}
