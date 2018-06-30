@@ -6,12 +6,21 @@ ignore:
     - jest > jest-cli > jest-config > jest-jasmine2 > jest-message-util > micromatch > braces:
         reason: None given
         expires: '2018-07-29T01:39:51.665Z'
+      jest > jest-cli > jest-config > jest-jasmine2 > jest-matchers > jest-message-util > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T15:01:49.886Z'
     - jest > jest-cli > jest-util > jest-message-util > micromatch > braces:
         reason: None given
         expires: '2018-07-29T01:39:51.665Z'
+      jest > jest-cli > jest-jasmine2 > jest-matchers > jest-message-util > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T15:01:49.886Z'
     - jest > jest-cli > jest-runtime > jest-haste-map > micromatch > braces:
         reason: None given
         expires: '2018-07-29T01:39:51.665Z'
+      jest > jest-cli > jest-runtime > jest-config > jest-jasmine2 > jest-matchers > jest-message-util > micromatch > braces:
+        reason: None given
+        expires: '2018-07-30T15:01:49.886Z'
     - jest > jest-cli > jest-environment-jsdom > jest-util > jest-message-util > micromatch > braces:
         reason: None given
         expires: '2018-07-29T01:39:51.665Z'
@@ -84,5 +93,11 @@ ignore:
   'npm:content-type-parser:20170905':
     - jest > jest-cli > jest-environment-jsdom > jsdom > content-type-parser:
         reason: None given
-        expires: '2018-07-29T01:39:51.666Z'
+        expires: '2018-07-30T15:01:49.886Z'
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > content-type-parser:
+        reason: None given
+        expires: '2018-07-30T15:01:49.887Z'
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > content-type-parser:
+        reason: None given
+        expires: '2018-07-30T15:01:49.887Z'
 patch: {}
