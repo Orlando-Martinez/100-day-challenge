@@ -11,6 +11,8 @@ deploy:
     skip-cleanup: true
     github-token: $github_token  # Set in the settings page of your repository, as a secure variable
     keep-history: true
-    local_dir: build 
+    local_dir: build
+    repo: Orlando-Martinez/Orlando-Martinez.github.io
+
     on:
         branch: master
