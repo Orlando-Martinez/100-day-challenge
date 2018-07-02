@@ -6,11 +6,14 @@ script:
 - CI=false npm run build
 env:
 - NODE_ENV=TEST
+cache:
+    directories:
+        - "node_modules"
 deploy:
     provider: pages
     skip-cleanup: true
     github-token: $github_token  # Set in the settings page of your repository, as a secure variable
-    keep-history: true
+    keep-history: false
     local_dir: build
     repo: Orlando-Martinez/Orlando-Martinez.github.io
 
